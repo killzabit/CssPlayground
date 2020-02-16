@@ -1,0 +1,60 @@
+body {
+    background: #333;
+    text-align: center;
+    overflow: hidden;
+
+}
+
+.jalapeno {
+    color: green;
+    font-size: 300px;
+    animation-name: jalapeno1;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition-timing-function: linear;
+    transition: transform 1s linear;
+    position: relative;
+    display: inline-block;
+    user-select: none;
+}
+
+.jalapeno:hover {
+    transform: rotate(360deg);
+}
+
+.habanero {
+    color: orange;
+    font-size: 300px;
+    animation-name: habanero1;
+    animation-duration: 7s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: relative;
+    display: inline-block;
+    user-select: none;
+}
+
+.pepper {
+    user-select: none;
+    position: absolute;
+    z-index: -1;
+}
+
+@keyframes jalapeno1 {
+    0% {color: green; left: -1300px; top: 0px;}
+    25% {color: greenyellow; left: 10px; top: 0px;}
+    50% {color: rgb(35, 133, 10); left: 150px; top: 0px;}
+    75% {color: lightgreen; left: 300px; top: 0px;}
+    100% {color: darkgreen; left: 1300px; top: 0px;}
+}
+
+@keyframes habanero1 {
+    0% {color: rgb(224, 144, 39); left: -1300px; top: 0px;}
+    25% {color: rgb(219, 139, 35); left: 10px; top: 0px;}
+    50% {color: rgb(255, 186, 82); left: 150px; top: 0px;}
+    75% {color: rgb(238, 202, 83); left: 300px; top: 0px;}
+    100% {color: rgb(255, 136, 0); left: 1300px; top: 0px;}
+
+}
